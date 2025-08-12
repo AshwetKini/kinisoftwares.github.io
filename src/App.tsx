@@ -211,29 +211,34 @@ function App() {
       </div>
 
       {/* Navigation */}
-      <nav className={`fixed w-full z-40 transition-all duration-500 ${
-        scrollY > 50 
-          ? 'bg-black/80 backdrop-blur-2xl border-b border-white/10 shadow-2xl' 
-          : 'bg-transparent'
-      }`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center space-x-4 group">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-300" />
-                <img 
-                  src="/kinisoftwareslogo.png" 
-                  alt="Kini Softwares Logo" 
-                  className="relative h-12 w-12 rounded-xl object-cover"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                  }}
-                />
-              </div>
-              <div className="text-3xl font-black bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent">
-                Kini <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Softwares</span>
-              </div>
-            </div>
+    <nav
+  className={`fixed w-full z-40 transition-all duration-500 ${
+    scrollY > 50
+      ? 'bg-black/80 backdrop-blur-2xl border-b border-white/10 shadow-2xl'
+      : 'bg-transparent'
+  }`}
+>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between items-center py-4">
+      <div className="flex items-center space-x-4 group">
+        <div className="relative">
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-300" />
+          <img
+            src="/kinisoftwares.github.io/kinisoftwareslogo.png"
+            alt="Kini Softwares Logo"
+            className="relative h-12 w-12 rounded-xl object-cover"
+            onError={(e) => {
+              e.currentTarget.style.display = 'none';
+            }}
+          />
+        </div>
+        <div className="text-3xl font-black bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent">
+          Kini{' '}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+            Softwares
+          </span>
+        </div>
+      </div>
             
             <div className="hidden md:flex space-x-8">
               {['Home', 'Services', 'About', 'Portfolio', 'Contact'].map((item, index) => (
