@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kini Softwares - Premium IT Solutions</title>
+  <meta name="description" content="Leading IT solutions company providing website development, mobile apps, CRM systems, custom software, and hosting services. Founded by Ashwet Kini.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- This script redirects all 404 requests to index.html for SPA routing -->
+  <script type="text/javascript">
+    // GitHub Pages SPA redirect script
+    // This script takes the current page and converts it to a query string
+    // to be processed by the index.html file
+
+    var pathSegmentsToKeep = 1; // For GitHub Pages with custom domain, use 0
+
+    var l = window.location;
+
+    l.replace(
+      l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+      l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + 
+      '/?/' +
+      l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+      (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+      l.hash
+    );
+  </script>
+</head>
+<body>
+  <!-- Fallback content for browsers with JavaScript disabled -->
+  <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+    <h1>Redirecting...</h1>
+    <p>If you are not redirected automatically, 
+       <a href="/">click here to go to the homepage</a>.
+    </p>
+  </div>
+</body>
+</html>

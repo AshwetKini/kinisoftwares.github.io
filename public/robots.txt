@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Block crawling of development and build files
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /.git/
+
+# Allow important pages
+Allow: /
+Allow: /services
+Allow: /about
+Allow: /contact
+Allow: /portfolio
+
+# Sitemap location
+Sitemap: https://ashwetkini.github.io/kinisoftwares.github.io/sitemap.xml
+
+# Additional directives for common crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay (optional - helps with server load)
+Crawl-delay: 1
