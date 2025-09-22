@@ -2,14 +2,58 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="/kinisoftwareslogo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kini Softwares - Premium IT Solutions & Development Services</title>
     <meta name="description" content="Leading IT solutions company providing website development, mobile apps, CRM systems, custom software, and hosting services. Founded by Ashwet Kini.">
-    <!-- <script type="module" crossorigin src="/kinisoftwares.github.io/assets/index-BKp7fUfY.js"></script> -->
-     <script type="module" src="/src/main.tsx"></script>
-
+    
+    <!-- Enhanced SEO Meta Tags -->
+    <meta name="keywords" content="best web development, mobile apps, CRM systems, custom software, hosting services, IT solutions, Kini Softwares, Ashwet Kini">
+    <meta name="author" content="Ashwet Kini">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Kini Softwares - Premium IT Solutions & Development Services">
+    <meta property="og:description" content="Leading IT solutions company providing website development, mobile apps, CRM systems, custom software, and hosting services. Founded by Ashwet Kini.">
+    <meta property="og:image" content="https://ashwetkini.github.io/kinisoftwares.github.io/kinisoftwareslogo.png">
+    <meta property="og:url" content="https://ashwetkini.github.io/kinisoftwares.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kini Softwares">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kini Softwares - Premium IT Solutions & Development Services">
+    <meta name="twitter:description" content="Leading IT solutions company providing website development, mobile apps, CRM systems, custom software, and hosting services. Founded by Ashwet Kini.">
+    <meta name="twitter:image" content="https://ashwetkini.github.io/kinisoftwares.github.io/kinisoftwareslogo.png">
+    <meta name="twitter:creator" content="@ashwetkini">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ashwetkini.github.io/kinisoftwares.github.io/">
+    
+    <!-- GitHub Pages SPA Routing Fix Script -->
+    <script type="text/javascript">
+      // Single Page Application redirect script for GitHub Pages
+      // This script checks if the current page was redirected from a 404 and 
+      // handles the routing for React Router
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    
+    <!-- Production Build Assets -->
+    <script type="module" crossorigin src="/kinisoftwares.github.io/assets/index-BKp7fUfY.js"></script>
     <link rel="stylesheet" crossorigin href="/kinisoftwares.github.io/assets/index-CczNVG_r.css">
+    
+    <!-- Development Script (Comment out for production) -->
+    <!-- <script type="module" src="/src/main.tsx"></script> -->
   </head>
   <body>
     <div id="root"></div>

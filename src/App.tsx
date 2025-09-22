@@ -30,6 +30,7 @@ import {
   Play,
   ChevronDown
 } from 'lucide-react';
+import SEOMeta from '../components/SEOMeta';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -184,6 +185,17 @@ function App() {
 
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
+
+      <div className="min-h-screen bg-black text-white overflow-x-hidden">
+      {/* SEO Meta Tags */}
+      <SEOMeta
+        title="Kini Softwares - Premium IT Solutions & Development Services"
+        description="Leading IT solutions company providing website development, mobile apps, CRM systems, custom software, and hosting services. Founded by Ashwet Kini in Nallasopara West."
+        keywords="Top IT solutions company,best IT solutions company,web development, mobile apps, CRM systems, custom software, hosting, Kini Softwares, Ashwet Kini, Nallasopara West"
+        url="/"
+        image="/kinisoftwareslogo.png"
+        type="website"
+      />
       {/* Custom Cursor */}
       <div 
         className="fixed w-6 h-6 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full pointer-events-none z-50 mix-blend-difference transition-transform duration-100 ease-out"
